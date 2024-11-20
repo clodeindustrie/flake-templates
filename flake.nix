@@ -43,6 +43,26 @@
     };
   in {
     templates = {
+      js = mkWelcomeText {
+        path = ./js;
+        name = "Js Template";
+        description = ''
+          my js template
+        '';
+        buildTools = [
+          "whatev"
+        ];
+      };
+      python = mkWelcomeText {
+        path = ./python;
+        name = "Python Template";
+        description = ''
+          my python template
+        '';
+        buildTools = [
+          "whatev"
+        ];
+      };
       php = mkWelcomeText {
         path = ./php;
         name = "PHP Template";
