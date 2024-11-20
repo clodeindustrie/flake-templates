@@ -20,15 +20,10 @@
         buildInputs = with pkgs; [];
       in rec {
 
-
         devShells.default = pkgs.mkShell {
           inherit nativeBuildInputs buildInputs;
 
           shellHook = ''
-            if [ ! -f .envrc ]; then
-            echo "use flake" >> .envrc
-            echo "dotenv_if_exists .env" >> .envrc
-            fi
             export PATH="$PWD/node_modules/.bin/:$PATH"
             '';
         };
