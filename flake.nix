@@ -62,9 +62,9 @@
         description = ''
           my php template
         '';
-        # buildTools = [
-        #   "python310"
-        # ];
+        buildTools = [
+          "whatev"
+        ];
       };
     };
   };
