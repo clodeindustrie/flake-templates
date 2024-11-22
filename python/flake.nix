@@ -34,6 +34,9 @@
                 export PYTHONPATH=${python-with-my-packages}/${python-with-my-packages.sitePackages}
                 # maybe set more env-vars
                 export PATH="$PWD/node_modules/.bin/:$PYTHONPATH:$PATH"
+                # python3 -m venv venv
+                # source venv/bin/activate
+                # pip install -r requirements.txt
             '';
           };
         });
